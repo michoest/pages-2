@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/ping', (req, res) => {
-    res.json({ success: true, message: 'pong'});
+    res.json({ success: true, message: 'pong', date: new Date().toLocaleString() });
   })
 
 app.listen(port, () => {
